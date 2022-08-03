@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 80%;
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+h4 {
+  color: hsl(186, 14%, 43%);
+  font-size: 0.8rem;
+}
+
+.container {
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 10%;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+
+/* BUTTONS */
+
+.tipbtn {
+  padding: 0.5rem 1rem;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  margin-bottom: 0.8em;
+}
+
+.tipbtn:hover {
+  background-color: hsl(185, 41%, 84%);
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.reset-btn {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+  background-color: #26c0ab;
+  color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.reset-btn:hover {
+  background-color: hsl(185, 41%, 84%);
+  transition: 0.8s;
+}
+
+/* LEFT PART */
+
+#custom {
+  width: 27%;
+  text-align: center;
+  color: hsl(186, 14%, 43%);
+  padding: 0.3rem;
+}
+
+#custom::placeholder,
+.bill input::placeholder,
+.people input::placeholder {
+  color: hsl(186, 14%, 43%);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.bill,
+.btn-box,
+.people {
+  margin-bottom: 1.3em;
+}
+
+.bill input,
+.people input {
+  text-align: right;
+  color: hsl(186, 14%, 43%);
+  padding: 0.1rem;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+}
+
+.bill-reader {
+  background-image: url(images/icon-dollar.svg);
+}
+
+.inp-people {
+  background-image: url(images/icon-person.svg);
+}
+
+/* RIGHT PART */
+.right {
+  background-color: hsl(183, 100%, 15%);
+  width: 70%;
+  padding: 1rem;
+  border-radius: 7px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.tip-header,
+.total-header {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+.tip-person,
+.total-person {
+  color: hsl(184, 14%, 56%);
+}
+
+span {
+  color: hsl(172, 67%, 45%);
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+.tip-amount {
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.tip-total {
+  justify-content: space-between;
+  margin-bottom: 6em;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: block;
+    max-width: 460px;
+    border-radius: 20px;
+  }
+
+  .left {
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+
+  .right {
+    margin: 0 auto;
+  }
+
+  input {
+    width: 55%;
+  }
+}
